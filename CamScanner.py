@@ -1,9 +1,11 @@
 import cv2
+import os
 import numpy as np
 
 video = cv2.VideoCapture(0)
 
 captured = False
+counter = 0
 
 
 def order(points):
@@ -65,7 +67,7 @@ while True:
 
     cv2.rectangle(display, (x, y), (x+w, y+h), (0, 255, 0), 1)
 
-    cv2.putText(display, "Press C to capture",
+    cv2.putText(display, "Press C to capture or S to save",
                 (display.shape[0]//2, 20), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0))
 
     cv2.imshow('Display', display)
@@ -74,6 +76,18 @@ while True:
         result = capture(frame, paper)
         enhanced = enhance(result)
         captured = True
+
+    if cv2.waitKey(1) == ord('s'):
+        path = os.path.dirname(__file__)
+        filename = os.path.join(
+            path, "output/imgenhance" + str(counter) + ".jpg")
+        filenameOri = os.path.join(
+            path, "output/imgOri" + str(counter) + ".jpg")
+
+        cv2.imwrite(filename, enhanced)
+        cv2.imwrite(filenameOri, result)
+
+        counter += 1
 
     if cv2.waitKey(1) == ord('q'):
         break
