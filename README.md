@@ -15,11 +15,11 @@ Program ini berfungsi untuk memindai dokumen ke dalam file digital yang nantinya
 
 __Contoh penggunaan__
 + Tampilan Awal
-  ![interface](image/interface.png)
+  ![interface](image/interface.png)</br>
 + Hasil pindaian (Orginal)
-  ![Original](image/original.png)
+  ![Original](image/original.png)</br>
 + Hasil pindaian (Enhanced)
-  ![Enhanced](image/enhanced.png)
+  ![Enhanced](image/enhanced.png)</br>
 ### Color Detection (Tugas Opsional)
 TODO
 
