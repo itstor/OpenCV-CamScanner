@@ -7,13 +7,14 @@
 ## Hasil Pembelajaran OpenCV
 ### Color Space
 Digunakan untuk mengubah warna dari suatu gambar ke space warna lain seperti gray</br>
+_Exercise:_ dalam folder Colorspace saya membuat perbandingan warna antara gray, hsv, dan hsl
 ### Smoothing
 Biasa digunakan untuk mengurangi noise dari suatu gambar</br>
-Dalam folder Smoothing saya menggunakan gaussian blur untuk mengaburkkan wajah yang terdeteksi
+_Exercise:_ dalam folder smoothing saya menggunakan gaussian blur untuk mengaburkkan wajah yang terdeteksi
 ### Geometric transformation
 Digunakan untuk mengubah bentuk dari suatu gambar. contoh rotasi, scalling, translasi, perspective transformation, dan affine transformation</br>
 Untuk perbedaan antara perspective dan affine adalah perspective menggunakan empat titik sebagai acuan sedangkan affine menggunakan tiga titik</br>
-Dalam folder GeometricTransformation saya memanfaatkan perspective tranformation untuk mengubah perpektif dari kartu yang diletakkan secara miring
+_Exercise:_ dalam folder GeometricTrannsformation saya memanfaatkan perspective tranformation untuk mengubah perpektif dari kartu yang diletakkan secara miring
 
 
 ## Project dengan OpenCV
