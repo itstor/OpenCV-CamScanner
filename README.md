@@ -1,5 +1,5 @@
 # Document Scanner using OpenCV
-
+Created during my internship on ICHIRO ITS.
 ## Screenshot
 <p align="center">
   <img src="./image/interface.png" height="350" title="Interface">
